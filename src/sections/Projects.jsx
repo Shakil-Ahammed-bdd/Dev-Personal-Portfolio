@@ -3,13 +3,22 @@ import { FaGithub } from "react-icons/fa";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 const projects = [
   {
-    title: "Fintech Dashboard",
-    description:
-      "A comprehensive financial analytics platform with real-time data visualization, portfolio management, and AI-powered insights.",
-    image: "/projects/project1.png",
-    tags: ["React", "Typescript", "NodeJS"],
-    link: "#",
-    github: "#",
+   title: "Ahoban Blood Donation Organization",
+  description:
+    "A comprehensive blood donation platform that connects blood donors with people in need. Features include donor registration, blood donor search by blood group and location, blood request management, donation history, donor experiences, blog management, leaderboard, and an admin dashboard with an approval system.",
+  image: "/projects/project1.png",
+  tags: [
+    "React",
+    "Vite",
+    "Tailwind CSS",
+    "Node.js",
+    "Express.js",
+    "MongoDB",
+    "JWT",
+    "REST API"
+  ],
+  link: "https://ahoban-blood-donation-organization.netlify.app",
+  github: "https://github.com/Shakil-Ahammed-bdd/Ahoban-Blood-Donation-Organization",
   },
   {
     title: "E-Commerce Platform",
