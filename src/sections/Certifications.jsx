@@ -10,12 +10,13 @@ const certifications = [
     link: "/certificates/interviewquest-explorer.pdf", // TODO: place the certificate file in public/certificates/ with this exact name, or update the path
   },
   {
-    title: "InterviewQuest Explorer — Bronze Honor",
-    issuer: "CPS Academy",
-    date: "27th November, 2025",
+    title: "Public Key Infrastructure (PKI) Training Program",
+    issuer:
+      "Office of the Controller of Certifying Authorities (CCA), ICT Division",
+    date: "20th June, 2026",
     description:
-      "Secured a place among the Top 50 in InterviewQuest-2, demonstrating strong commitment and a solid foundation in interview readiness.",
-    link: "/certificates/interviewquest-explorer.pdf", // TODO: place the certificate file in public/certificates/ with this exact name, or update the path
+      "Successfully completed a two-day comprehensive training program on Public Key Infrastructure (PKI), covering PKI architecture, cryptography, certificate lifecycle, and security standards. Organized by the Office of the Controller of Certifying Authorities (CCA), ICT Division.",
+    link: "/certificates/kpi%20shakil.pdf",
   },
 
   // Add your second certificate here once you receive it — just uncomment and fill in:

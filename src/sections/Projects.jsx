@@ -3,40 +3,41 @@ import { FaGithub } from "react-icons/fa";
 import { AnimatedBorderButton } from "@/components/AnimatedBorderButton";
 const projects = [
   {
-   title: "Ahoban Blood Donation Organization",
-  description:
-    "A comprehensive blood donation platform that connects blood donors with people in need. Features include donor registration, blood donor search by blood group and location, blood request management, donation history, donor experiences, blog management, leaderboard, and an admin dashboard with an approval system.",
-  image: "/projects/project1.png",
-  tags: [
-    "React",
-    "Vite",
-    "Tailwind CSS",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
-    "JWT",
-    "REST API"
-  ],
-  link: "https://ahoban-blood-donation-organization.netlify.app",
-  github: "https://github.com/Shakil-Ahammed-bdd/Ahoban-Blood-Donation-Organization",
+    title: "Ahoban Blood Donation Organization",
+    description:
+      "A comprehensive blood donation platform that connects blood donors with people in need. Features include donor registration, blood donor search by blood group and location, blood request management, donation history, donor experiences, blog management, leaderboard, and an admin dashboard with an approval system.",
+    image: "/projects/project1.png",
+    tags: [
+      "React",
+      "Vite",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "REST API",
+    ],
+    link: "https://ahoban-blood-donation-organization.netlify.app",
+    github:
+      "https://github.com/Shakil-Ahammed-bdd/Ahoban-Blood-Donation-Organization",
   },
   {
-    title: "E-Commerce Platform",
+    title: "Bangladesh Travel Map",
     description:
-      "A full-featured e-commerce solution with inventory management, payment processing, and analytics dashboard.",
+      "An interactive Bangladesh travel map featuring all 64 districts, tourist attractions, historical landmarks, rivers, and popular travel destinations. Explore Bangladesh with detailed location information and an immersive map experience.",
     image: "/projects/project2.png",
-    tags: ["Next.js", "Stripe", "PostgreSQL", "Tailwind"],
-    link: "#",
-    github: "#",
+    tags: ["React", "JavaScript", "Leaflet", "GeoJSON", "CSS"],
+    link: "https://bangladesh-travel-map.netlify.app",
+    github: "https://github.com/Shakil-Ahammed-bdd/Bangladesh-Travel-Map-",
   },
   {
-    title: "AI Writing Assistant",
+    title: "AI Hub – AI Models Platform",
     description:
-      "An intelligent writing tool powered by GPT-4, helping users create better content faster.",
+      "A modern AI tools discovery platform featuring popular AI models, intelligent writing assistants, and advanced AI products. Explore AI tools with detailed descriptions, pricing information, and categorized collections in one place.",
     image: "/projects/project3.png",
-    tags: ["React", "OpenAI", "Python", "FastAPI"],
-    link: "#",
-    github: "#",
+    tags: ["React", "JavaScript", "Tailwind CSS", "AI Tools", "JSON"],
+    link: "https://ai-model-hub-web-application.netlify.app",
+    github: "https://github.com/Shakil-Ahammed-bdd/ai-model-hub",
   },
   {
     title: "Project Management Tool",
@@ -103,10 +104,10 @@ export const Projects = () => {
                     <ArrowUpRight className="w-5 h-5" />
                   </a>
                   <a
-                    href={project.github }
+                    href={project.github}
                     className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all"
                   >
-                    <FaGithub  className="w-5 h-5" />
+                    <FaGithub className="w-5 h-5" />
                   </a>
                 </div>
               </div>

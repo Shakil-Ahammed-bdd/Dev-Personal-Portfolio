@@ -7,8 +7,8 @@ const references = [
       "I taught Shakil Data Structures and closely observed his problem-solving approach. He shows strong analytical thinking and consistent dedication to learning.",
     author: "Rakibul Hasan",
     role: "Course Instructor, Data Structures",
-    avatar:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", // TODO: replace with real photo if available
+    avatar: "/Rakibul Hasan.jpg",
+    link: "https://nub.ac.bd/pims/faculty-member/t4grtsyx/rakibul-hasan",
   },
   {
     quote:
@@ -16,7 +16,8 @@ const references = [
     author: "Shayshab Azad Kanon",
     role: "CEO, Decoder Squad",
     avatar:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop", // TODO: replace with real photo if available
+      "/public/shayshab.jpeg",
+    link: "https://www.linkedin.com/in/shayshab-azad",
   },
 ];
 
@@ -32,38 +33,35 @@ export const References = () => {
       (prev) => (prev - 1 + references.length) % references.length
     );
   };
+
   return (
     <section id="references" className="py-32 relative overflow-hidden">
       <div
         className="absolute top-1/2 left-1/2
-       w-[800px] h-[800px] bg-primary/5
+        w-[800px] h-[800px] bg-primary/5
         rounded-full blur-3xl -translate-x-1/2 -translate-y-1/2"
       />
-      <div
-        className="container mx-auto 
-      px-6 relative z-10"
-      >
+
+      <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
-        <div
-          className="text-center max-w-3xl 
-        mx-auto mb-16"
-        >
+        <div className="text-center max-w-3xl mx-auto mb-16">
           <span
-            className="text-secondary-foreground 
-          text-sm font-medium tracking-wider 
-          uppercase animate-fade-in"
+            className="text-secondary-foreground
+            text-sm font-medium tracking-wider
+            uppercase animate-fade-in"
           >
             REFERENCES
           </span>
+
           <h2
-            className="text-4xl md:text-5xl 
-          font-bold mt-4 mb-6 animate-fade-in 
-          animation-delay-100 text-secondary-foreground"
+            className="text-4xl md:text-5xl
+            font-bold mt-4 mb-6 animate-fade-in
+            animation-delay-100 text-secondary-foreground"
           >
             People who can{" "}
             <span
-              className="font-serif italic 
-            font-normal text-white"
+              className="font-serif italic
+              font-normal text-white"
             >
               vouch for me.
             </span>
@@ -89,10 +87,17 @@ export const References = () => {
                   alt={references[activeIdx].author}
                   className="w-14 h-14 rounded-full object-cover ring-2 ring-primary/20"
                 />
+
                 <div>
-                  <div className="font-semibold">
+                  <a
+                    href={references[activeIdx].link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-semibold hover:text-primary transition-colors duration-300"
+                  >
                     {references[activeIdx].author}
-                  </div>
+                  </a>
+
                   <div className="text-sm text-muted-foreground">
                     {references[activeIdx].role}
                   </div>
